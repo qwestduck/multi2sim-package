@@ -16,7 +16,7 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
 
 Package: libm2s-cuda1
 Architecture: any
-Depends: 
-Description: blah
- blah blah
+Depends: ${misc:Depends}, ${shlibs:Depends} 
+Description: Multi2Sim CUDA runtime
+ Provides a shared CUDA runtime for use with Multi2sim
 
