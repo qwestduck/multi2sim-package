@@ -13,3 +13,10 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
  Multi2Sim is a simulation framework for CPU-GPU heterogeneous computing written
  in C. It includes models for superscalar, multithreaded, and multicore CPUs,
  as well as GPU architectures.
+
+Package: libm2s-cuda1
+Architecture: any
+Depends: 
+Description: blah
+ blah blah
+
