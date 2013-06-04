@@ -1,1 +1,1 @@
-Disable-OpenCL-and-OpenGL-compilers-until-dependencies-are-resolved
+Disable-clcc-until-amdapp-is-packaged
