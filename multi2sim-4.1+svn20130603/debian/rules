@@ -12,6 +12,20 @@
 %:
 	dh $@
 
+override_dh_clean:
+	dh_clean
+	find . -name \Makefile.in -type f -delete
+	rm -rf m4
+	rm -f aclocal.m4
+	rm -f config.*
+	rm -f configure
+	rm -f depcomp
+	rm -f INSTALL
+	rm -f install-sh
+	rm -f ltmain.sh
+	rm -f missing
+	rm -f ylwrap
+
 override_dh_auto_configure:
 	libtoolize
 	aclocal
