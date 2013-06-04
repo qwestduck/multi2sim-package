@@ -1,7 +1,7 @@
 # These are not debian packages
 : new-package-should-close-itp-bug
 : wrong-bug-number-in-closes l3:#nnnn
-: unknown-section universe/misc
+: unknown-section universe/libdevel
 
 # Bugs
 # multi2sim binary: package-name-doesnt-match-sonames libm2s-cuda1 libm2s-glew1 libm2s-glu1 libm2s-glut1 libm2s-opencl-old1 libm2s-opencl1 libm2s-opengl1
