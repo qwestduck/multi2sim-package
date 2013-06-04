@@ -18,5 +18,11 @@ Package: libm2s-cuda1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends} 
 Description: Multi2Sim CUDA runtime
- Provides a shared CUDA runtime for use with Multi2sim
+ Provides a shared CUDA runtime for use with Multi2Sim
+
+Package: libm2s-cuda1-dev
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-cuda1
+Description: Multi2sim CUDA runtime development files
+ Provides a shared CUDA runtime for use with Multi2Sim
 
