@@ -13,4 +13,8 @@
 	dh $@
 
 override_dh_auto_configure:
+	libtoolize
+	aclocal
+	autoconf
+	automake -a
 	dh_auto_configure -- --enable-debug --disable-opencl 
