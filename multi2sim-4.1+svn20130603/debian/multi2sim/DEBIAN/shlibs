@@ -1,0 +1,7 @@
+libm2s-cuda 1 multi2sim
+libm2s-glew 1 multi2sim
+libm2s-glu 1 multi2sim
+libm2s-glut 1 multi2sim
+libm2s-opencl 1 multi2sim
+libm2s-opencl-old 1 multi2sim
+libm2s-opengl 1 multi2sim
