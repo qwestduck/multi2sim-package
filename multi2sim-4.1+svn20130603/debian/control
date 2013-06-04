@@ -7,6 +7,7 @@ Standards-Version: 3.9.3
 Homepage: http://www.multi2sim.org/
 
 Package: multi2sim
+Section: universe/misc
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libgtk-3, freeglut3, libglew, llvm-3.1
 Description: CPU-GPU Simulator for Heterogeneous Computing
@@ -15,12 +16,14 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
  as well as GPU architectures.
 
 Package: libm2s-cuda1
+Section: universe/libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends} 
 Description: Multi2Sim CUDA runtime
  Provides a shared CUDA runtime for use with Multi2Sim
 
 Package: libm2s-cuda1-dev
+Section: universe/libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-cuda1 (= ${binary:Version})
 Description: Multi2sim CUDA runtime development files
