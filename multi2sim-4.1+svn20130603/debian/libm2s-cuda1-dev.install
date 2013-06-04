@@ -1,4 +1,3 @@
 #! /usr/bin/dh-exec
 
 usr/lib/libm2s-cuda.so
-usr/lib/libm2s-cuda.so.1
