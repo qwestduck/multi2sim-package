@@ -7,7 +7,6 @@ Standards-Version: 3.9.3
 Homepage: http://www.multi2sim.org/
 
 Package: multi2sim
-Section: universe/misc
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libgtk-3, freeglut3, libglew, llvm-3.1
 Description: CPU-GPU Simulator for Heterogeneous Computing
