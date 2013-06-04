@@ -17,4 +17,7 @@ override_dh_auto_configure:
 	aclocal
 	autoconf
 	automake -a
-	dh_auto_configure -- --enable-debug --disable-opencl 
+	dh_auto_configure -- --enable-debug --disable-opencl
+
+override_dh_auto_install:
+	dh_auto_install -- --destdir=debian/tmp/
