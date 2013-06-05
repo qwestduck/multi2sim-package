@@ -120,3 +120,24 @@ Description: Multi2sim OpenGL Utility Toolkit - development library
  This package provides symlinks for libm2s-glut1.so.1.0.0 for convenient
  linking.
 
+Package: libm2s-opencl1
+Section: universe/libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multi2Sim Open Computing Language runtime
+ Open framework for writing programs that execute across heterogeneous
+ platforms consisting of central processing units, graphics processing
+ units, DSPs and other processors.
+
+Package: libm2s-opencl1-dev
+Section: universe/libdevel
+Architecture: any
+Depends: ${misc:Depends}, libm2s-opencl1 (= ${binary:Version})
+Description: Multi2sim Open Computing Language runtime - development library
+ Open framework for writing programs that execute across heterogeneous
+ platforms consisting of central processing units, graphics processing
+ units, DSPs and other processors.
+ .
+ This package provides symlinks for libm2s-opencl1.so.1.0.0 for convenient
+ linking.
+

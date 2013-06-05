@@ -1,0 +1,4 @@
+# These are not debian packages
+: new-package-should-close-itp-bug
+: wrong-bug-number-in-closes l3:#nnnn
+: unknown-section universe/libs
