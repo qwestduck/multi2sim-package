@@ -2,11 +2,3 @@
 : new-package-should-close-itp-bug
 : wrong-bug-number-in-closes l3:#nnnn
 : unknown-section universe/libs
-
-# Bugs
-# multi2sim binary: package-name-doesnt-match-sonames libm2s-cuda1 libm2s-glew1 libm2s-glu1 libm2s-glut1 libm2s-opencl-old1 libm2s-opencl1 libm2s-opengl1
-# multi2sim binary: spelling-error-in-binary usr/bin/m2s-clcc ment meant
-# multi2sim binary: binary-without-manpage usr/bin/m2s
-# multi2sim binary: binary-without-manpage usr/bin/m2s-clcc
-# multi2sim binary: non-empty-dependency_libs-in-la-file usr/lib/libm2s-opencl.la
-# multi2sim binary: shlib-with-non-pic-code usr/lib/libm2s-opencl.so.1.0.0 
