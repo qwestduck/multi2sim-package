@@ -1,8 +1,8 @@
 #! /usr/bin/dh-exec
 usr/bin/
-usr/lib/libamd.a
+#usr/lib/libamd.a
 usr/lib/libasm.a
-usr/lib/libcl2llvm.a
+#usr/lib/libcl2llvm.a
 usr/lib/libcommon.a
 usr/lib/libcuda.a
 usr/lib/libdram.a
@@ -12,7 +12,7 @@ usr/lib/libevergreen.a
 usr/lib/libglew.a
 usr/lib/libglu.a
 usr/lib/libglut.a
-usr/lib/libllvm2si.a
+#usr/lib/libllvm2si.a
 usr/lib/libmemory.a
 usr/lib/libmemsystem.a
 usr/lib/libmhandle.a
@@ -20,7 +20,7 @@ usr/lib/libnetwork.a
 usr/lib/libopencl.a
 usr/lib/libopengl.a
 usr/lib/libsouthernislands.a
-usr/lib/libsi2bin.a
+#usr/lib/libsi2bin.a
 usr/lib/libtiming.a
 usr/lib/libutil.a
 usr/lib/libx86.a
