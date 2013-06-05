@@ -60,3 +60,32 @@ Description: Multi2sim OpenGL Extension Wrangler - development library
  This package provides symlinks for libm2s-glew1.so.1.0.0 for convenient
  linking.
 
+Package: libm2s-glu1
+Section: universe/libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multi2Sim OpenGL utility library
+ GLU offers simple interfaces for building mipmaps; checking for the
+ presence of extensions in the OpenGL (or other libraries which follow
+ the same conventions for advertising extensions); drawing
+ piecewise-linear curves, NURBS, quadrics and other primitives
+ (including, but not limited to, teapots); tesselating surfaces; setting
+ up projection matrices and unprojecting screen coordinates to world
+ coordinates.
+
+Package: libm2s-glu1-dev
+Section: universe/libdevel
+Architecture: any
+Depends: ${misc:Depends}, libm2s-glu1 (= ${binary:Version})
+Description: Multi2sim OpenGL utility library - development library
+ GLU offers simple interfaces for building mipmaps; checking for the
+ presence of extensions in the OpenGL (or other libraries which follow
+ the same conventions for advertising extensions); drawing
+ piecewise-linear curves, NURBS, quadrics and other primitives
+ (including, but not limited to, teapots); tesselating surfaces; setting
+ up projection matrices and unprojecting screen coordinates to world
+ coordinates.
+ .
+ This package provides symlinks for libm2s-glew1.so.1.0.0 for convenient
+ linking.
+
