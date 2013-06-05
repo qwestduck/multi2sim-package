@@ -1,0 +1,6 @@
+#! /usr/bin/dh-exec
+
+usr/lib/libm2s-glut.a
+usr/lib/libm2s-glut.la
+usr/lib/libm2s-glut.so.1
+usr/lib/libm2s-glut.so.1.0.0

@@ -86,6 +86,37 @@ Description: Multi2sim OpenGL utility library - development library
  up projection matrices and unprojecting screen coordinates to world
  coordinates.
  .
- This package provides symlinks for libm2s-glew1.so.1.0.0 for convenient
+ This package provides symlinks for libm2s-glu1.so.1.0.0 for convenient
+ linking.
+
+Package: libm2s-glut1
+Section: universe/libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multi2Sim OpenGL Utility Toolkit
+ GLUT is a window system independent toolkit for writing OpenGL programs,
+ implementing a simple windowing API, which makes learning about and
+ exploring OpenGL programming very easy.
+ .
+ GLUT is designed for constructing small to medium sized OpenGL programs,
+ however it is not a full-featured toolkit, so large applications requiring
+ sophisticated user interfaces are better off using native window system
+ toolkits like GTK+ or Motif.
+
+Package: libm2s-glut1-dev
+Section: universe/libdevel
+Architecture: any
+Depends: ${misc:Depends}, libm2s-glut1 (= ${binary:Version})
+Description: Multi2sim OpenGL Utility Toolkit - development library
+ GLUT is a window system independent toolkit for writing OpenGL programs,
+ implementing a simple windowing API, which makes learning about and
+ exploring OpenGL programming very easy.
+ .
+ GLUT is designed for constructing small to medium sized OpenGL programs,
+ however it is not a full-featured toolkit, so large applications requiring
+ sophisticated user interfaces are better off using native window system
+ toolkits like GTK+ or Motif.
+ .
+ This package provides symlinks for libm2s-glut1.so.1.0.0 for convenient
  linking.
 
