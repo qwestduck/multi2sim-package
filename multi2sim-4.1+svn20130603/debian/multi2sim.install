@@ -13,11 +13,6 @@ usr/lib/libglew.a
 usr/lib/libglu.a
 usr/lib/libglut.a
 usr/lib/libllvm2si.a
-usr/lib/libm2s-glu.*
-usr/lib/libm2s-glut.*
-usr/lib/libm2s-opencl.*
-usr/lib/libm2s-opencl-old.*
-usr/lib/libm2s-opengl.*
 usr/lib/libmemory.a
 usr/lib/libmemsystem.a
 usr/lib/libmhandle.a
