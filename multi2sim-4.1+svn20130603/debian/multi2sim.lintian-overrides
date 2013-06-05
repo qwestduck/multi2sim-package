@@ -7,5 +7,4 @@
 multi2sim: binary-without-manpage usr/bin/m2s
 
 # Bugs
-# multi2sim binary: non-empty-dependency_libs-in-la-file usr/lib/libm2s-opencl.la
 # multi2sim binary: shlib-with-non-pic-code usr/lib/libm2s-opencl.so.1.0.0 
