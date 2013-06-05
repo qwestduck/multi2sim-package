@@ -168,3 +168,24 @@ Description: Multi2sim Open Computing Language runtime (older version) - develop
  This package provides symlinks for libm2s-opencl-old1.so.1.0.0 for convenient
  linking.
 
+Package: libm2s-opengl1
+Section: universe/libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multi2Sim Open Graphics Library runtime
+ Cross-language, multi-platform API for rendering 2D and 3D computer graphics.
+ This is typically used to interact with a GPU, to achieve hardware-accelerated
+ rendering.
+
+Package: libm2s-opengl1-dev
+Section: universe/libdevel
+Architecture: any
+Depends: ${misc:Depends}, libm2s-opengl1 (= ${binary:Version})
+Description: Multi2Sim Open Graphics Library runtime - development library
+ Cross-language, multi-platform API for rendering 2D and 3D computer graphics.
+ This is typically used to interact with a GPU, to achieve hardware-accelerated
+ rendering.
+ .
+ This package provides symlinks for libm2s-opengl1.so.1.0.0 for convenient
+ linking.
+
