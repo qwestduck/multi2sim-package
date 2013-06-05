@@ -35,3 +35,28 @@ Description: Multi2sim CUDA runtime - development library
  This package provides symlinks for libm2s-cuda1.so.1.0.0 for convenient
  linking.
 
+Package: libm2s-glew1
+Section: universe/libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Multi2Sim OpenGL Extension Wrangler
+ The OpenGL Extension Wrangler, GLEW for short, is a library that
+ handles initialization of OpenGL extensions in a portable and simple
+ way.  Once the program initializes the library and checks the
+ availability of extensions, it can safely call the entry points defined
+ by the extension.
+
+Package: libm2s-glew1-dev
+Section: universe/libdevel
+Architecture: any
+Depends: ${misc:Depends}, libm2s-glew1 (= ${binary:Version})
+Description: Multi2sim OpenGL Extension Wrangler - development library
+ The OpenGL Extension Wrangler, GLEW for short, is a library that
+ handles initialization of OpenGL extensions in a portable and simple
+ way.  Once the program initializes the library and checks the
+ availability of extensions, it can safely call the entry points defined
+ by the extension.
+ .
+ This package provides symlinks for libm2s-glew1.so.1.0.0 for convenient
+ linking.
+

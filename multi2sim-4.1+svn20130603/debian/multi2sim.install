@@ -13,7 +13,6 @@ usr/lib/libglew.a
 usr/lib/libglu.a
 usr/lib/libglut.a
 usr/lib/libllvm2si.a
-usr/lib/libm2s-glew.*
 usr/lib/libm2s-glu.*
 usr/lib/libm2s-glut.*
 usr/lib/libm2s-opencl.*
