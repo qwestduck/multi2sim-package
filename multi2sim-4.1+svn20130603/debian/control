@@ -38,7 +38,7 @@ Description: Multi2sim CUDA runtime - development library
 Package: libm2s-glew1
 Section: universe/libs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL Extension Wrangler
  The OpenGL Extension Wrangler, GLEW for short, is a library that
  handles initialization of OpenGL extensions in a portable and simple
@@ -63,7 +63,7 @@ Description: Multi2sim OpenGL Extension Wrangler - development library
 Package: libm2s-glu1
 Section: universe/libs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL utility library
  GLU offers simple interfaces for building mipmaps; checking for the
  presence of extensions in the OpenGL (or other libraries which follow
@@ -92,7 +92,7 @@ Description: Multi2sim OpenGL utility library - development library
 Package: libm2s-glut1
 Section: universe/libs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL Utility Toolkit
  GLUT is a window system independent toolkit for writing OpenGL programs,
  implementing a simple windowing API, which makes learning about and
