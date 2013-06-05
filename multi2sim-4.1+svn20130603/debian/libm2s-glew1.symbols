@@ -1,4 +1,4 @@
-libm2s-glew.so.1 multi2sim #MINVER#
+libm2s-glew.so.1 libm2s-glew1 #MINVER#
  __glewActiveProgramEXT@Base 4.1+svn20130603
  __glewActiveShaderProgram@Base 4.1+svn20130603
  __glewActiveStencilFaceEXT@Base 4.1+svn20130603
