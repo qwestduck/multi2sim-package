@@ -35,5 +35,8 @@ override_dh_auto_configure:
 	automake -a
 	dh_auto_configure -- --enable-debug CFLAGS="$(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(CFLAGS_UPSTREAM_OVERRIDE)" LDFLAGS="$(shell dpkg-buildflags --get LDFLAGS)"
 
+override_dh_shlibdeps:
+	dh_shlibdeps -- --ignore-missing-info
+
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/tmp/
