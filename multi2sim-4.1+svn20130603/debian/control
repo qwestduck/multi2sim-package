@@ -17,7 +17,8 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
 Package: libm2s-cuda1
 Section: libs
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends} 
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: multiarch-support 
 Description: Multi2Sim CUDA runtime
  Provides a shared CUDA runtime for use with Multi2Sim. This allows
  simulation of cuda environments on Multi2Sim without needing a 
@@ -25,7 +26,7 @@ Description: Multi2Sim CUDA runtime
 
 Package: libm2s-cuda1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-cuda1 (= ${binary:Version})
 Description: Multi2sim CUDA runtime - development library
  Provides a shared CUDA runtime for use with Multi2Sim. This allows
@@ -39,6 +40,7 @@ Package: libm2s-glew1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
+Pre-Depends: multiarch-support
 Description: Multi2Sim OpenGL Extension Wrangler
  The OpenGL Extension Wrangler, GLEW for short, is a library that
  handles initialization of OpenGL extensions in a portable and simple
@@ -48,7 +50,7 @@ Description: Multi2Sim OpenGL Extension Wrangler
 
 Package: libm2s-glew1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-glew1 (= ${binary:Version})
 Description: Multi2sim OpenGL Extension Wrangler - development library
  The OpenGL Extension Wrangler, GLEW for short, is a library that
@@ -64,6 +66,7 @@ Package: libm2s-glu1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
+Pre-Depends: multiarch-support
 Description: Multi2Sim OpenGL utility library
  GLU offers simple interfaces for building mipmaps; checking for the
  presence of extensions in the OpenGL (or other libraries which follow
@@ -75,7 +78,7 @@ Description: Multi2Sim OpenGL utility library
 
 Package: libm2s-glu1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-glu1 (= ${binary:Version})
 Description: Multi2sim OpenGL utility library - development library
  GLU offers simple interfaces for building mipmaps; checking for the
@@ -93,6 +96,7 @@ Package: libm2s-glut1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
+Pre-Depends: multiarch-support
 Description: Multi2Sim OpenGL Utility Toolkit
  GLUT is a window system independent toolkit for writing OpenGL programs,
  implementing a simple windowing API, which makes learning about and
@@ -105,7 +109,7 @@ Description: Multi2Sim OpenGL Utility Toolkit
 
 Package: libm2s-glut1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-glut1 (= ${binary:Version})
 Description: Multi2sim OpenGL Utility Toolkit - development library
  GLUT is a window system independent toolkit for writing OpenGL programs,
@@ -124,6 +128,7 @@ Package: libm2s-opencl1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: multiarch-support
 Description: Multi2Sim Open Computing Language runtime
  Open framework for writing programs that execute across heterogeneous
  platforms consisting of central processing units, graphics processing
@@ -131,7 +136,7 @@ Description: Multi2Sim Open Computing Language runtime
 
 Package: libm2s-opencl1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-opencl1 (= ${binary:Version})
 Description: Multi2sim Open Computing Language runtime - development library
  Open framework for writing programs that execute across heterogeneous
@@ -145,6 +150,7 @@ Package: libm2s-opencl-old1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: multiarch-support
 Description: Multi2Sim Open Computing Language runtime (older version)
  Open framework for writing programs that execute across heterogeneous
  platforms consisting of central processing units, graphics processing
@@ -155,7 +161,7 @@ Description: Multi2Sim Open Computing Language runtime (older version)
 
 Package: libm2s-opencl-old1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-opencl-old1 (= ${binary:Version})
 Description: Multi2sim Open Computing Language runtime (older version) - development library
  Open framework for writing programs that execute across heterogeneous
@@ -172,6 +178,7 @@ Package: libm2s-opengl1
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: multiarch-support
 Description: Multi2Sim Open Graphics Library runtime
  Cross-language, multi-platform API for rendering 2D and 3D computer graphics.
  This is typically used to interact with a GPU, to achieve hardware-accelerated
@@ -179,7 +186,7 @@ Description: Multi2Sim Open Graphics Library runtime
 
 Package: libm2s-opengl1-dev
 Section: libdevel
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, libm2s-opengl1 (= ${binary:Version})
 Description: Multi2Sim Open Graphics Library runtime - development library
  Cross-language, multi-platform API for rendering 2D and 3D computer graphics.
