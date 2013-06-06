@@ -1,5 +1,5 @@
 #! /usr/bin/dh-exec
 
-usr/lib/libm2s-glew.a
-usr/lib/libm2s-glew.so.1
-usr/lib/libm2s-glew.so.1.0.0
+usr/lib/*/libm2s-glew.a
+usr/lib/*/libm2s-glew.so.1
+usr/lib/*/libm2s-glew.so.1.0.0

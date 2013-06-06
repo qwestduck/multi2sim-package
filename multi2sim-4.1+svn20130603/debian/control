@@ -2,8 +2,8 @@ Source: multi2sim
 Section: misc
 Priority: extra
 Maintainer: William Panlener <wpanlener@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), libtool, automake, freeglut3-dev, libglew-dev, llvm-3.1, libgtk-3-dev, lib32gcc1, gcc-multilib, flex, bison 
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9.0.0), libtool, automake, freeglut3-dev, libglew-dev, llvm-3.1, libgtk-3-dev, lib32gcc1, gcc-multilib, flex, bison 
+Standards-Version: 3.9.4
 Homepage: http://www.multi2sim.org/
 
 Package: multi2sim
