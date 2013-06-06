@@ -1,7 +1,6 @@
 SUBDIRS = \
 	runtime \
-	src \
-	tools
+	src
 
 images = \
 	images/alu_engine.png \
