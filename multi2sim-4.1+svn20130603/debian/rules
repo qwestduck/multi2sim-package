@@ -9,7 +9,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-CFLAGS_UPSTREAM_OVERRIDE="-Wno-error=unused-result -Wno-error=maybe-uninitialized -Wno-error=strict-aliasing -Wno-error=uninitialized -Wno-error=array-bounds"
+CFLAGS_UPSTREAM_OVERRIDE=-Wno-error=unused-result -Wno-error=maybe-uninitialized -Wno-error=strict-aliasing -Wno-error=uninitialized -Wno-error=array-bounds
 
 %:
 	dh $@
@@ -33,7 +33,7 @@ override_dh_auto_configure:
 	aclocal
 	autoconf
 	automake -a
-	dh_auto_configure -- --enable-debug CFLAGS="$(dpkg-buildflags --get CFLAGS) $(dpkg-buildflags --get CPPFLAGS) $(CFLAGS_UPSTREAM_OVERRIDE)" LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"
+	dh_auto_configure -- --enable-debug CFLAGS="$(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS) $(CFLAGS_UPSTREAM_OVERRIDE)" LDFLAGS="$(shell dpkg-buildflags --get LDFLAGS)"
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/tmp/
