@@ -702,7 +702,6 @@ AC_SUBST([PKGDATADIR])
 ###################
 
 debug=false
-CFLAGS="-msse2 -O3 -std=gnu99 -DNDEBUG"
 AC_ARG_ENABLE(debug,
 [  --enable-debug    Turn on debugging],
 [
@@ -712,17 +711,20 @@ AC_ARG_ENABLE(debug,
 		
 		# Add flag '-Wno-error=deprecated-declarations' only if it is supported.
 		# This flag prevents warnings caused by newer GTK versions that would cause with -Werror
-		saved_flags="-msse2 -Wall -Werror -DMHANDLE -g -O0 -std=gnu99"
+		new_flags="-msse2 -Wall -Werror -DMHANDLE -g -O0 -std=gnu99"
+		saved_flags="$CFLAGS"
 		CFLAGS="-Wno-error=deprecated-declarations"
 		AC_MSG_CHECKING([whether CC supports -Wno-error=deprecated-declarations])
 		AC_COMPILE_IFELSE([AC_LANG_PROGRAM([])],
 				[ AC_MSG_RESULT([yes]) ]
-				[ saved_flags="$saved_flags -Wno-error=deprecated-declarations" ],
+				[ new_flags="$new_flags -Wno-error=deprecated-declarations" ],
 				[ AC_MSG_RESULT([no]) ]
 			)
-		CFLAGS="$saved_flags"
+		CFLAGS="$new_flags $saved_flags"
 		;;
 	no)
+		new_flags="-msse2 -O3 -std=gnu99 -DNDEBUG"
+		CFLAGS="$new_flags $CFLAGS"
 		;;
 	*)
 		AC_MSG_ERROR(bad value ${enableval} for --enable-debug)
@@ -861,16 +863,6 @@ AC_CONFIG_FILES([
 		src/lib/esim/Makefile
 		src/lib/mhandle/Makefile
 		src/lib/util/Makefile
-
-		tools/Makefile
-
-		tools/clcc/Makefile
-		tools/clcc/amd/Makefile
-		tools/clcc/cl2llvm/Makefile
-		tools/clcc/llvm2si/Makefile
-		tools/clcc/si2bin/Makefile
-
-		tools/glcc/Makefile
 		])
 AC_OUTPUT
 
