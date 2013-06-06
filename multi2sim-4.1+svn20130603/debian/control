@@ -1,5 +1,5 @@
 Source: multi2sim
-Section: universe/misc
+Section: misc
 Priority: extra
 Maintainer: William Panlener <wpanlener@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), libtool, automake, freeglut3-dev, libglew-dev, llvm-3.1, libgtk-3-dev, lib32gcc1, gcc-multilib, flex, bison 
@@ -15,7 +15,7 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
  as well as GPU architectures.
 
 Package: libm2s-cuda1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends} 
 Description: Multi2Sim CUDA runtime
@@ -24,7 +24,7 @@ Description: Multi2Sim CUDA runtime
  vendor driver.
 
 Package: libm2s-cuda1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-cuda1 (= ${binary:Version})
 Description: Multi2sim CUDA runtime - development library
@@ -36,7 +36,7 @@ Description: Multi2sim CUDA runtime - development library
  linking.
 
 Package: libm2s-glew1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL Extension Wrangler
@@ -47,7 +47,7 @@ Description: Multi2Sim OpenGL Extension Wrangler
  by the extension.
 
 Package: libm2s-glew1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-glew1 (= ${binary:Version})
 Description: Multi2sim OpenGL Extension Wrangler - development library
@@ -61,7 +61,7 @@ Description: Multi2sim OpenGL Extension Wrangler - development library
  linking.
 
 Package: libm2s-glu1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL utility library
@@ -74,7 +74,7 @@ Description: Multi2Sim OpenGL utility library
  coordinates.
 
 Package: libm2s-glu1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-glu1 (= ${binary:Version})
 Description: Multi2sim OpenGL utility library - development library
@@ -90,7 +90,7 @@ Description: Multi2sim OpenGL utility library - development library
  linking.
 
 Package: libm2s-glut1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, libm2s-opengl1
 Description: Multi2Sim OpenGL Utility Toolkit
@@ -104,7 +104,7 @@ Description: Multi2Sim OpenGL Utility Toolkit
  toolkits like GTK+ or Motif.
 
 Package: libm2s-glut1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-glut1 (= ${binary:Version})
 Description: Multi2sim OpenGL Utility Toolkit - development library
@@ -121,7 +121,7 @@ Description: Multi2sim OpenGL Utility Toolkit - development library
  linking.
 
 Package: libm2s-opencl1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Multi2Sim Open Computing Language runtime
@@ -130,7 +130,7 @@ Description: Multi2Sim Open Computing Language runtime
  units, DSPs and other processors.
 
 Package: libm2s-opencl1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-opencl1 (= ${binary:Version})
 Description: Multi2sim Open Computing Language runtime - development library
@@ -142,7 +142,7 @@ Description: Multi2sim Open Computing Language runtime - development library
  linking.
 
 Package: libm2s-opencl-old1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Multi2Sim Open Computing Language runtime (older version)
@@ -154,7 +154,7 @@ Description: Multi2Sim Open Computing Language runtime (older version)
  OpenCL runtimes such as AMD's Evergreen.
 
 Package: libm2s-opencl-old1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-opencl-old1 (= ${binary:Version})
 Description: Multi2sim Open Computing Language runtime (older version) - development library
@@ -169,7 +169,7 @@ Description: Multi2sim Open Computing Language runtime (older version) - develop
  linking.
 
 Package: libm2s-opengl1
-Section: universe/libs
+Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Multi2Sim Open Graphics Library runtime
@@ -178,7 +178,7 @@ Description: Multi2Sim Open Graphics Library runtime
  rendering.
 
 Package: libm2s-opengl1-dev
-Section: universe/libdevel
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libm2s-opengl1 (= ${binary:Version})
 Description: Multi2Sim Open Graphics Library runtime - development library
