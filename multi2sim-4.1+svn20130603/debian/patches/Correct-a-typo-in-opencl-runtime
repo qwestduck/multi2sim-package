@@ -1,0 +1,22 @@
+Description: Correct a typo in OpenCL runtime
+ A typo was generating libraries with corrupted segments and was blocking
+ to debian packaging. This patch corrects that typo.
+ .
+ multi2sim (4.1+svn20130603-1) unstable; urgency=low
+ .
+   * Correct a typo in OpenCL runtime
+Author: William Panlener <wpanlener@gmail.com>
+
+---
+
+--- multi2sim-4.1+svn20130603.orig/runtime/opencl/x86-device.c
++++ multi2sim-4.1+svn20130603/runtime/opencl/x86-device.c
+@@ -222,7 +222,7 @@ void opencl_x86_device_switch_fiber(vola
+ 
+ 		"1:\n\t"			/* Former label 'switch_fiber_no_regs' */
+ 		"mov %%esp, (%%eax)\n\t"	/* current->esp <= esp */
+-		"movl $2f, 0x4(%%eax)\n\t"	/* current->eip <= label 'switch_fiber_return' */
++		"movl $0x2f, 0x4(%%eax)\n\t"	/* current->eip <= label 'switch_fiber_return' */
+ 
+ 		"mov (%%edx), %%esp\n\t"	/* esp <= dest->esp */
+ 		"jmp *0x4(%%edx)\n\t"		/* eip <= dest->eip */
