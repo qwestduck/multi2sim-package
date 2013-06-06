@@ -9,7 +9,12 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-CFLAGS_UPSTREAM_OVERRIDE=-Wno-error=unused-result -Wno-error=maybe-uninitialized -Wno-error=strict-aliasing -Wno-error=uninitialized -Wno-error=array-bounds
+# These should be handled as an upstream patch A functional test for
+# compiler flag support should be done before trying to use a flag.
+# The first set of flags works on all tested versions of gcc. The second set
+# only works on some versions of gcc.
+CFLAGS_UPSTREAM_OVERRIDE=-Wno-error=unused-result -Wno-error=strict-aliasing -Wno-error=uninitialized -Wno-error=array-bounds
+CFLAGS_UPSTREAM_OVERRIDE_CONDITIONAL=-Wno-error=maybe-uninitialized
 
 %:
 	dh $@
