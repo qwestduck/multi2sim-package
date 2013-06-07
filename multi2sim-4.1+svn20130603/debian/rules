@@ -1,10 +1,5 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
@@ -31,8 +26,10 @@ override_dh_auto_configure:
 	aclocal
 	autoconf
 	automake -a
+	# Harden in a compat 8 friendly way
 	dh_auto_configure -- --enable-debug CFLAGS="$(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" LDFLAGS="$(shell dpkg-buildflags --get LDFLAGS)"
 
+# Disregard libGL.so.1 missing symbol errors when using proprietary vendor drivers
 override_dh_shlibdeps:
 	dh_shlibdeps -- --ignore-missing-info
 
