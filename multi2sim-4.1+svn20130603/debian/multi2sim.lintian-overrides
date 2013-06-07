@@ -1,6 +1,2 @@
-# These are not debian packages
-: new-package-should-close-itp-bug
-: wrong-bug-number-in-closes l3:#nnnn
-
 # Neither I nor upstream will likely write man-pages
 multi2sim: binary-without-manpage usr/bin/m2s

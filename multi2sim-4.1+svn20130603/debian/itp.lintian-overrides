@@ -1,3 +1,0 @@
-# This and all symlinks to this should be removed when ITP is filed
-: new-package-should-close-itp-bug
-: wrong-bug-number-in-closes l3:#nnnn
