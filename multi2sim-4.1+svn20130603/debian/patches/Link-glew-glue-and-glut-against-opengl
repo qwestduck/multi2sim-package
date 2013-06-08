@@ -10,17 +10,22 @@ Author: William Panlener <wpanlener@gmail.com>
 
 ---
 
---- multi2sim-4.1+svn20130603.orig/runtime/glu/Makefile.am
-+++ multi2sim-4.1+svn20130603/runtime/glu/Makefile.am
-@@ -3,7 +3,7 @@ if HAVE_M32_FLAG
- lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-glu.la
+--- multi2sim-4.1+svn20130603.orig/runtime/Makefile.am
++++ multi2sim-4.1+svn20130603/runtime/Makefile.am
+@@ -1,10 +1,12 @@
++# opengl should always appear before glew, glu, and glut.
++# It is a dependency and must be built first.
+ SUBDIRS = \
+ 	cuda \
++	opengl \
+ 	glew \
+ 	glu \
+ 	glut \
+ 	opencl \
+ 	opencl-old \
+-	opengl \
+ 	include
  
- __top_builddir__lib_libm2s_glu_la_LDFLAGS = -version-info 1:0:0
--
-+__top_builddir__lib_libm2s_glu_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
- __top_builddir__lib_libm2s_glu_la_SOURCES = \
- 	\
- 	api.c \
 --- multi2sim-4.1+svn20130603.orig/runtime/glut/Makefile.am
 +++ multi2sim-4.1+svn20130603/runtime/glut/Makefile.am
 @@ -3,7 +3,7 @@ if HAVE_M32_FLAG
@@ -30,6 +35,17 @@ Author: William Panlener <wpanlener@gmail.com>
 -
 +__top_builddir__lib_libm2s_glut_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
  __top_builddir__lib_libm2s_glut_la_SOURCES = \
+ 	\
+ 	api.c \
+--- multi2sim-4.1+svn20130603.orig/runtime/glu/Makefile.am
++++ multi2sim-4.1+svn20130603/runtime/glu/Makefile.am
+@@ -3,7 +3,7 @@ if HAVE_M32_FLAG
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-glu.la
+ 
+ __top_builddir__lib_libm2s_glu_la_LDFLAGS = -version-info 1:0:0
+-
++__top_builddir__lib_libm2s_glu_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
+ __top_builddir__lib_libm2s_glu_la_SOURCES = \
  	\
  	api.c \
 --- multi2sim-4.1+svn20130603.orig/runtime/glew/Makefile.am
