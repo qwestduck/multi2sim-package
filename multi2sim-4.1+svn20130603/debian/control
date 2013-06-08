@@ -2,13 +2,13 @@ Source: multi2sim
 Section: misc
 Priority: extra
 Maintainer: William Panlener <wpanlener@gmail.com>
-Build-Depends: debhelper (>= 9.0.0), libtool, automake, freeglut3-dev, libglew-dev, llvm-3.1, libgtk-3-dev, lib32gcc1, gcc-multilib, flex, bison 
+Build-Depends: debhelper (>= 9.0.0), libc6-dev, libtool, automake, freeglut3-dev, libglew-dev, libgtk-3-dev, lib32gcc1, gcc-multilib
 Standards-Version: 3.9.4
 Homepage: http://www.multi2sim.org/
 
 Package: multi2sim
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, libgtk-3, freeglut3, libglew, llvm-3.1
+Depends: ${misc:Depends}, ${shlibs:Depends}, libgtk-3-0 (>= 3.0.0), freeglut3, libglew
 Description: CPU-GPU Simulator for Heterogeneous Computing
  Multi2Sim is a simulation framework for CPU-GPU heterogeneous computing written
  in C. It includes models for superscalar, multithreaded, and multicore CPUs,
