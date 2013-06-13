@@ -1,2 +1,2 @@
 version=3
-multi2sim-(.+).tar.gz
+http://www.multi2sim.org/files/multi2sim-(\d+\.\d+(\.\d+)?)\.tar\.gz
