@@ -1,0 +1,47 @@
+Description: [m2c] Generalize regex used for gcc parameter filtering
+ GCC parameters are being dynamically manipulated to remove warning
+ errors unique to certain files. While arguably this should not be
+ done at all, this patch makes sure that strings such as 
+ "-Werror=format-security" aren't transformed into "=format-security"
+ in order to avoid compile errors. 
+ .
+ multi2sim (4.1+svn20130716-1) unstable; urgency=low
+ .
+   * New upstream release
+Author: William Panlener <wpanlener@gmail.com>
+
+---
+
+--- multi2sim-4.1+svn20130716.orig/m2c/cl2llvm/Makefile.am
++++ multi2sim-4.1+svn20130716/m2c/cl2llvm/Makefile.am
+@@ -75,7 +75,7 @@ INCLUDES = @M2S_INCLUDES@
+ # 'lex.c' and 'parser.c'. Some flex and bison versions generate code that
+ # produce warnings, so we need to avoid the use of flag '-Werror' in this case.
+ 
+-CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/\-Werror\>//g"`
++CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/-Werror[^=]/ /g"`
+ 
+ lex.o: lex.c parser.h
+ 	$(AM_V_CC) $(CC) -c -o lex.o lex.c $(DEFS) $(INCLUDES) $(CFLAGS_NO_WERROR) $(AM_CFLAGS)
+--- multi2sim-4.1+svn20130716.orig/m2c/frm2bin/Makefile.am
++++ multi2sim-4.1+svn20130716/m2c/frm2bin/Makefile.am
+@@ -61,7 +61,7 @@ INCLUDES = @M2S_INCLUDES@
+ # 'lex.c' and 'parser.c'. Some flex and bison versions generate code that
+ # produce warnings, so we need to avoid the use of flag '-Werror' in this case.
+ 
+-CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/\-Werror\>//g"`
++CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/-Werror[^=]/ /g"`
+ 
+ lex.o: lex.c parser.h
+ 	$(AM_V_CC) $(CC) -c -o lex.o lex.c $(DEFS) $(INCLUDES) $(CFLAGS_NO_WERROR) $(AM_CFLAGS)
+--- multi2sim-4.1+svn20130716.orig/m2c/si2bin/Makefile.am
++++ multi2sim-4.1+svn20130716/m2c/si2bin/Makefile.am
+@@ -70,7 +70,7 @@ INCLUDES = @M2S_INCLUDES@
+ # 'lex.c' and 'parser.c'. Some flex and bison versions generate code that
+ # produce warnings, so we need to avoid the use of flag '-Werror' in this case.
+ 
+-CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/\-Werror\>//g"`
++CFLAGS_NO_WERROR = `echo "$(CFLAGS)" | $(SED) "s/-Werror[^=]/ /g"`
+ 
+ lex.o: lex.c parser.h
+ 	$(AM_V_CC) $(CC) -c -o lex.o lex.c $(DEFS) $(INCLUDES) $(CFLAGS_NO_WERROR) $(AM_CFLAGS)

@@ -1,4 +1,3 @@
-Do-not-build-clcc-or-glcc
 Link-glew-glue-and-glut-against-opengl
-Correct-a-typo-in-opencl-runtime
 Do-not-overwrite-cflags
+m2c-generalize-regex-for-gcc-parameter-filtering
