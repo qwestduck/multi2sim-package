@@ -1,0 +1,11 @@
+multi2sim (4.1+svn20130716-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- William Panlener <wpanlener@gmail.com>  Tue, 16 Jul 2013 14:54:42 -0700
+
+multi2sim (4.1+svn20130603-1) unstable; urgency=low
+
+  * Initial release (Closes: #711476)
+
+ -- William Panlener <wpanlener@gmail.com>  Mon, 03 Jun 2013 11:30:53 -0700
