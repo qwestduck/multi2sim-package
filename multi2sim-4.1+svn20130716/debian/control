@@ -14,14 +14,9 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
  in C. It includes models for superscalar, multithreaded, and multicore CPUs,
  as well as GPU architectures.
 
-# Package: multi2sim-clcc
+# Package: multi2sim-m2c
 # Architecture: any
 # Depends: ${misc:Depends}, ${shlibs:Depends}, llvm (>= 3.1.0), flex, bison, amdapp-sdk (= 2.5.0)
-# Description:
-
-# Package: multi2sim-glcc
-# Architecture: any
-# Depends: ${misc:Depends}, ${shlibs:Depends}
 # Description:
 
 Package: libm2s-cuda1
