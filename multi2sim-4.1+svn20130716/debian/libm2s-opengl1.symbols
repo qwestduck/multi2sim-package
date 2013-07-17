@@ -1,6 +1,7 @@
 libm2s-opengl.so.1 libm2s-opengl1 #MINVER#
  __mhandle_check@Base 4.1+svn20130603
  __mhandle_done@Base 4.1+svn20130603
+ __mhandle_register_ptr@Base 4.1+svn20130716
  __mhandle_used_memory@Base 4.1+svn20130603
  __xcalloc@Base 4.1+svn20130603
  __xmalloc@Base 4.1+svn20130603
@@ -2373,6 +2374,7 @@ libm2s-opengl.so.1 libm2s-opengl1 #MINVER#
  opengl_buffer_obj_repo_free@Base 4.1+svn20130603
  opengl_buffer_obj_repo_get@Base 4.1+svn20130603
  opengl_context_destroy@Base 4.1+svn20130603
+ opengl_context_get_data_size@Base 4.1+svn20130716
  opengl_context_init@Base 4.1+svn20130603
  opengl_context_props_set_version@Base 4.1+svn20130603
  opengl_context_set_error@Base 4.1+svn20130603
