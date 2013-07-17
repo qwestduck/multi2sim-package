@@ -1,0 +1,2 @@
+libm2s-opencl2: shlib-with-non-pic-code
+libm2s-opencl2: shlib-with-executable-stack
