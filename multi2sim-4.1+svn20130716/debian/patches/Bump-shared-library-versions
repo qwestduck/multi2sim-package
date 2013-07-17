@@ -1,0 +1,68 @@
+Description: Bump shared library versions
+ Shared libraries should bump major versions when a symbol is removed
+ from a library or behavior is changed in a backwards incompatible way.
+ Minor versions should be bumped when a symbol is added or behavior
+ is changed in a backwards compatible way.
+ .
+ multi2sim (4.1+svn20130716-1) precise; urgency=low
+ .
+   * New upstream release
+Author: William Panlener <wpanlener@gmail.com>
+
+---
+
+--- multi2sim-4.1+svn20130716.orig/runtime/cuda/Makefile.am
++++ multi2sim-4.1+svn20130716/runtime/cuda/Makefile.am
+@@ -2,7 +2,7 @@ if HAVE_M32_FLAG
+ 
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-cuda.la
+ 
+-__top_builddir__lib_libm2s_cuda_la_LDFLAGS = -version-info 1:0:0
++__top_builddir__lib_libm2s_cuda_la_LDFLAGS = -version-info 2:0:0
+ 
+ __top_builddir__lib_libm2s_cuda_la_SOURCES = \
+ 	\
+--- multi2sim-4.1+svn20130716.orig/runtime/glu/Makefile.am
++++ multi2sim-4.1+svn20130716/runtime/glu/Makefile.am
+@@ -2,7 +2,7 @@ if HAVE_M32_FLAG
+ 
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-glu.la
+ 
+-__top_builddir__lib_libm2s_glu_la_LDFLAGS = -version-info 1:0:0
++__top_builddir__lib_libm2s_glu_la_LDFLAGS = -version-info 1:0:1
+ __top_builddir__lib_libm2s_glu_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
+ __top_builddir__lib_libm2s_glu_la_SOURCES = \
+ 	\
+--- multi2sim-4.1+svn20130716.orig/runtime/glut/Makefile.am
++++ multi2sim-4.1+svn20130716/runtime/glut/Makefile.am
+@@ -2,7 +2,7 @@ if HAVE_M32_FLAG
+ 
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-glut.la
+ 
+-__top_builddir__lib_libm2s_glut_la_LDFLAGS = -version-info 1:0:0
++__top_builddir__lib_libm2s_glut_la_LDFLAGS = -version-info 1:0:1
+ __top_builddir__lib_libm2s_glut_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
+ __top_builddir__lib_libm2s_glut_la_SOURCES = \
+ 	\
+--- multi2sim-4.1+svn20130716.orig/runtime/glew/Makefile.am
++++ multi2sim-4.1+svn20130716/runtime/glew/Makefile.am
+@@ -2,7 +2,7 @@ if HAVE_M32_FLAG
+ 
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-glew.la
+ 
+-__top_builddir__lib_libm2s_glew_la_LDFLAGS = -version-info 1:0:0
++__top_builddir__lib_libm2s_glew_la_LDFLAGS = -version-info 1:0:1
+ __top_builddir__lib_libm2s_glew_la_LIBADD = -L$(top_builddir)/lib -lm2s-opengl
+ __top_builddir__lib_libm2s_glew_la_SOURCES = \
+ 	\
+--- multi2sim-4.1+svn20130716.orig/runtime/opencl/Makefile.am
++++ multi2sim-4.1+svn20130716/runtime/opencl/Makefile.am
+@@ -2,7 +2,7 @@ if HAVE_M32_FLAG
+ 
+ lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-opencl.la
+ 
+-__top_builddir__lib_libm2s_opencl_la_LDFLAGS = -version-info 1:0:0 -lpthread -ldl -lrt
++__top_builddir__lib_libm2s_opencl_la_LDFLAGS = -version-info 2:0:0 -lpthread -ldl -lrt
+ 
+ __top_builddir__lib_libm2s_opencl_la_SOURCES = \
+ 	\

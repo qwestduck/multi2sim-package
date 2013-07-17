@@ -1,6 +1,7 @@
 libm2s-glu.so.1 libm2s-glu1 #MINVER#
  __mhandle_check@Base 4.1+svn20130603
  __mhandle_done@Base 4.1+svn20130603
+ __mhandle_register_ptr@Base 4.1+svn20130716
  __mhandle_used_memory@Base 4.1+svn20130603
  __xcalloc@Base 4.1+svn20130603
  __xmalloc@Base 4.1+svn20130603

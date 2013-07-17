@@ -1,3 +1,4 @@
 Link-glew-glue-and-glut-against-opengl
 Do-not-overwrite-cflags
 m2c-generalize-regex-for-gcc-parameter-filtering
+Bump-shared-library-versions
