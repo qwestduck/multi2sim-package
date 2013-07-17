@@ -1,4 +1,4 @@
-libm2s-cuda.so.1 libm2s-cuda1 #MINVER#
+libm2s-cuda.so.2 libm2s-cuda2 #MINVER#
  __cudaRegisterFatBinary@Base 4.1+svn20130603
  __cudaRegisterFunction@Base 4.1+svn20130603
  __cudaRegisterSurface@Base 4.1+svn20130603

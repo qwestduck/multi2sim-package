@@ -1,0 +1,5 @@
+#! /usr/bin/dh-exec
+
+usr/lib/*/libm2s-cuda.a
+usr/lib/*/libm2s-cuda.so.2
+usr/lib/*/libm2s-cuda.so.2.0.0

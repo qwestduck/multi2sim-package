@@ -19,7 +19,7 @@ Description: CPU-GPU Simulator for Heterogeneous Computing
 # Depends: ${misc:Depends}, ${shlibs:Depends}, llvm (>= 3.1.0), flex, bison, amdapp-sdk (= 2.5.0)
 # Description:
 
-Package: libm2s-cuda1
+Package: libm2s-cuda2
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -29,16 +29,16 @@ Description: Multi2Sim CUDA runtime
  simulation of cuda environments on Multi2Sim without needing a 
  vendor driver.
 
-Package: libm2s-cuda1-dev
+Package: libm2s-cuda2-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libm2s-cuda1 (= ${binary:Version})
+Depends: ${misc:Depends}, libm2s-cuda2 (= ${binary:Version})
 Description: Multi2sim CUDA runtime - development library
  Provides a shared CUDA runtime for use with Multi2Sim. This allows
  simulation of cuda environments on Multi2Sim without needing a
  vendor driver.
  .
- This package provides symlinks for libm2s-cuda1.so.1.0.0 for convenient
+ This package provides symlinks for libm2s-cuda for convenient
  linking.
 
 Package: libm2s-glew1
