@@ -11,7 +11,7 @@ The user command-line supports a sequence of command-line options, and can
 include an x86 ELF binary (executable x86 program) followed by its arguments.
 The execution of this program will be simulated by Multi2Sim, together with the
 rest of the x86 programs specified in the context configuration file (option
-'--ctx-config <file>'). The rest of the possible command-line options are
+\'\-\-ctx\-config <file>\'). The rest of the possible command-line options are
 classified in categories and listed next:
 
 .SH DESCRIPTION
@@ -24,35 +24,30 @@ classified in categories and listed next:
 ./" ================================================================================
 
 .TP
-.BR \-n ", " \-\-bits =\fIBITS\fR
-Set the number of bits to modify.
-Default is one bit.
-
-.TP
-.BR \-\-ctx\-config\ <file>
+\fB\-\-ctx\-config\fR \fI<file>\fR
 Use <file> as the context configuration file. This file describes the
 initial set of running applications, their arguments, and environment
-variables. Type 'm2s \-\-ctx-config\-help' for a description of the file
+variables. Type \'m2s \-\-ctx-config\-help\' for a description of the file
 format.
 
 .TP
-.BR \-\-ctx\-config\-help
+\fB\-\-ctx\-config\-help\fR
 Show a help message describing the format of the context configuration
-file, passed to the simulator through option '\-\-ctx\-config <file>'.
+file, passed to the simulator through option \'\-\-ctx\-config <file>\'.
 
 .TP
-.BR \-\-elf\-debug\ <file>
+\fB\-\-elf\-debug\fR \fI<file>\fR
 Dump debug information related with the analysis of ELF files. Every time
 an executable file is open (CPU program of GPU kernel binary), detailed
 information about its symbols, sections, strings, etc. is dumped here.
 
 .TP
-.BR \-\-max\-time\ <time>
+\fB\-\-max\-time\fR \fI<time>\fR
 Maximum simulation time in seconds. The simulator will stop once this time
 is exceeded. A value of 0 (default) means no time limit.
 
 .TP
-.BR \-\-trace\ <file>.gz
+\fB\-\-trace\fR \fI<file>.gz\fR
 Generate a trace file with debug information on the configuration of the
 modeled CPUs, GPUs, and memory system, as well as their dynamic
 simulation. The trace is a compressed plain-text file in format. The user
@@ -60,9 +55,9 @@ should watch the size of the generated trace as simulation runs, since
 the trace file can quickly become extremely large.
 
 .TP
-.BR \-\-visual\ <file>.gz
+\fB\-\-visual\fR \fI<file>.gz\fR
 Run the Multi2Sim Visualization Tool. This option consumes a file
-generated with the '\-\-trace' option in a previous simulation. This option
+generated with the \'\-\-trace\' option in a previous simulation. This option
 is only available on systems with support for GTK 3.0 or higher.
 
 ./" ================================================================================
@@ -73,7 +68,7 @@ is only available on systems with support for GTK 3.0 or higher.
 .BR \-\-x86\-config\ <file>
 Configuration file for the x86 CPU timing model, including parameters
 describing stage bandwidth, structures size, and other parameters of
-processor cores and threads. Type 'm2s \-\-x86\-help' for details on the file
+processor cores and threads. Type \'m2s \-\-x86\-help\' for details on the file
 format.
 
 .TP
@@ -326,7 +321,7 @@ together with a detailed GPU simulation (option '\-\-si\-sim detailed').
 .TP
 .BR \-\-si\-shader\-binary\ <file>
 Use <file> as the returned shader binary upon an OpenGL call to
-'clLoadProgramWithSource'.
+\'clLoadProgramWithSource\'.
 
 .TP
 .BR \-\-si\-sim\ {functional|detailed}
@@ -339,8 +334,8 @@ GPU model.
 
 .TP
 .BR \-\-arm\-disasm\ <file>
-Disassemble an ARM binary using Multi2Sim's internal disassembler. This
-option is incompatible with any other command-line option.
+Disassemble an ARM binary using Multi2Sim\'s internal disassembler. This
+option is incompatible with any other command\-line option.
 
 .TP
 .BR \-\-arm\-debug\-loader\ <file>
